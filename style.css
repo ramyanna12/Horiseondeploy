@@ -1,80 +1,93 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;    
+
+    padding: 0; /* Padding set to 0 to reduce the spacing from the element */
+    margin: 0; /* Margin is 0 */
 }
-/*                                */
+
 body {
-    background-color: #d9dcd6;
+    background-color: #d9dcd6; /* The background is Light grey for the body */
 }
-/*                                */
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    padding: 20px; /* The padding for the header */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* The Header font-family */
+    background-color: #2a607c; /* Backround Color for the Header -  deep blue */ 
+    color: #ffffff; /* The header font color is white */
 }
-/*                                */
+
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-/*                                */
+/*  /* 'header h1' selects the elements in a and applies the following styles: - 'display: inline-block;'Behaves like an inline element, but with block-level properties Can be applied.
+ - 'Font size: 48px;'Set font size  to 48px */ 
+                              */
 .header h1 .seo {
     color: #d9dcd6;
 }
-/*                                */
+/* Target elements of class 'seo' that are descendants of elements within elements of class 'header'.
+ Sets the text color of these elements to "#d9dcd6", or light gray */ 
+                        
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    padding-top: 15px; /*'padding-top: 15px;'Add 15 pixels of padding to the top of these elements */
+    margin-right: 20px; /* - 'Right margin: 20px;'Sets the right margin of  these elements to 20px.*/
+    float: right; /* - 'Float: Right;'Moves these elements to the right within the container. */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ./* - 'Font family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans serif; 
+    'Specify the font family for these elements.*/
+    font-size: 20px; /*  - 'Font size: 20px;'Sets the font size of these elements to 20px */ 
 }
-/*                                */
+
 .header div ul {
     list-style-type: none;
 }
-/*                                */
+/*   /* This CSS rule removes the default list style type for UL elements  within divs that are children of elements with  class 'header'*/
+
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
-}
-/*                                */
+}  /* This CSS rule specifies that list items in UL elements that are  children of divs with  class "header" are displayed as inline blocks  with a left margin of 25 pixels. */
+                             */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-/*                                */
+/* This CSS rule sets the color of the anchor element (a)  to white (#ffffff) and removes standard text decorations (e.g.
+ underline)  */
 p {
     font-size: 16px;
-}
-/*                                */
+}  /*  Font size set to 16px  */
 .hero {
-    height: 800px;
+    height: 800px; /* Set the height to 800 pixels.*/
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    margin-bottom: 25px; /*takes the full width of the container and adds a bottom margin of 25 pixels.*/
+    background-image: url("../images/digital-marketing-meeting.jpg"); /*displays background images for digital marketing meetings.*/
     background-size: cover;
     background-position: center;
 }
-/*                                */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-/*                                */
+/* Floats elements left with a right margin */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/* Floats elements to the left with a 25px right margin */                   
 .float-right {
     float: right;
     margin-left: 25px;
 }
-/*                                */
+/*    Floats elements to the right with a 25px left margin   */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-/*                                */
+/*   Sets the content width to 75% of its container, 
+displays it as an inline block, 
+and adds a left margin of 20px.      */
+
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,55 +98,70 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/*                                */
+/*    Styles for the benefits section:
+- Adds a right margin of 20px and padding of 20px
+- Clears floats
+- Floats the element to the right
+- Sets width to 20% and height to 100%
+- Defines font family as a sans-serif type
+- Sets background color to #2589bd   */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
-/*                                */
+/*   Adds margin and changes text color for the benefit sections     */
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
-/*                                */
+/*  Adjusts margin and text alignment for the headings in benefit sections*/
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
-/*                                */
+/*  Adds a bottom margin of 32px and changes text color to white   */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-/*                                */
+/* Sets a bottom margin of 10px and centers the text */
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-/*                                */
+/*  Defines a bottom margin of 10px and centers the text    */
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-/*                                */
+/* Sets a bottom margin of 10px and centers the text horizontally   */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-/*                                */
+/*   Styles the image within .benefit-lead:
+   - Displays it as a block element
+   - Sets margin to 10px on top and bottom, auto on left and right for centering
+   - Limits the maximum width to 150px  */
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-/*                                */
+/*  Styles the image within .benefit-brand:
+   - Displays it as a block element
+   - Sets margin to 10px on top and bottom, auto on left and right for centering
+   - Limits the maximum width to 150px  */
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-/*                                */
+/*   Styles the image within .benefit-cost:
+   - Displays it as a block element
+   - Sets margin to 10px on top and bottom, auto on left and right for centering
+   - Limits the maximum width to 150px  */                           
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -142,7 +170,11 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-/*                                */
+/*  Styles for the search engine optimization section:
+   - Adds a bottom margin of 20px and padding of 50px
+   - Sets a height of 300px
+   - Defines font family as a sans-serif type
+   - Sets background color to #0072bb and text color to white     */
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
@@ -151,7 +183,11 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-/*                                */
+/*  Styles for the online reputation management section:
+   - Adds a bottom margin of 20px and padding of 50px
+   - Sets a height of 300px
+   - Defines font family as a sans-serif type
+   - Sets background color to #0072bb and text color to white  */
 
 .social-media-marketing {
     margin-bottom: 20px;
@@ -161,19 +197,23 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-/*                                */
+/*  Styles for the social media marketing section:
+   - Adds a bottom margin of 20px and padding of 50px
+   - Sets a height of 300px
+   - Defines font family as a sans-serif type
+   - Sets background color to #0072bb and text color to white */
 .search-engine-optimization img {
     max-height: 200px;
 }
-/*                                */
+/*  Limits the maximum height of images within the search engine optimization section to 200 pixels */
 .online-reputation-management img {
     max-height: 200px;
 }
-/*                                */
+/*  Limits the maximum height of images within the online reputation management to 200 pixels  */
 .social-media-marketing img {
     max-height: 200px;
 }
-/*                                */
+/*  Limits the maximum height of images within the social media marketing to 200 pixels   */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -183,12 +223,12 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-/*                                */
+/*Adds a bottom margin of 20px and sets the font size to 36px for h2 elements in the online reputation management section    */
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-/*                                */
+/*  Sets a bottom margin of 20px and a font size of 36px for h2 elements in the social media marketing section   */
 .footer {
     padding: 30px;
     clear: both;
@@ -196,7 +236,11 @@ p {
     text-align: center;
 }
 
-/*                                */
+/*  Styles for the footer section:
+   - Adds padding of 30px
+   - Clears floats
+   - Defines font family as a fallback of sans-serif types
+   - Centers the text  */
 .footer h2 {
     font-size: 20px;
-}
+} /*Sets a font size of 20px for h2 elements within the footer section*/
